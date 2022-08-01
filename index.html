@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let isDivisible = function (n, x, y) {
+            if (x % n == 0) {
+                console.log(x + ":" + " بر " + n + "بخش پذیر است :)");
+            } else {
+                console.log(x + ":" + " بر " + n + "بخش پذیر نیست :(");
+            }
+            if (y % n == 0) {
+                console.log(y + ":" + " بر " + n + "بخش پذیر است :)");
+            } else {
+                console.log(y + ":" + " بر " + n + "بخش پذیر نیست :(");
+            }
+        };
+
+        isDivisible(
+            Number(prompt("عدد nام را وارد کنید .")),
+            Number(prompt("عدد اول")),
+            Number(prompt("عدد دوم"))
+        );
+
+    </script>
+</body>
+
+</html>
